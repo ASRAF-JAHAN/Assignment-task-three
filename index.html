@@ -2,43 +2,227 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-    <title>fruit Burst</title>
-    <!-- tailwind and daisy ui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- lato and poppins google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500;600;800&display=swap"
-        rel="stylesheet">
-        <style>
-            .font-Lato{
-                font-family: 'Lato', sans-serif;
-                
-            }
-            .font-Poppins{
-                font-family: 'Poppins', sans-serif;
-            }
-        </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <title>fruit Burst</title>
+  <!-- tailwind and daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- lato and poppins google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500;600;800&display=swap"
+    rel="stylesheet">
+  <style>
+    .font-Lato {
+      font-family: 'Lato', sans-serif;
+
+    }
+
+    .font-Poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 
 </head>
 
-<body>
-    <header>
-        <nav>
-            
-        </nav>
+<body class="font-Lato font-Poppins ">
+  <header>
+    <!-- nav bar section -->
+    <nav class="max-w-screen-xl mx-auto mt-6 text-white  ">
+      <div class="navbar  bg-[#F85559] rounded-full">
+        <div class="navbar-start gap-4 ml-4">
+          <a href="">Home</a>
+          <a href="">About Us</a>
+          <a href="">Shop</a>
+          <a href="">All Fruits</a>
+        </div>
+        <div class="navbar-center text-center">
+          <p class="flex gap-2 items-center text-2xl"><img src="./images/logo.png" alt="">Fruit Burst</p>
+        </div>
+        <div class="navbar-end">
+          <input class=" relative rounded-full text-sm py-3 pl-2" type="text" name="" id="" placeholder="Search here">
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-black absolute  h-5 w-5" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
 
-    </header>
-    <main>
+        </div>
+      </div>
 
-    </main>
-    <footer>
+    </nav>
+    <!-- banner section -->
+    <div class="max-w-screen-xl relative  font-Lato mx-auto mt-12">
+      <div class="carousel  overflow-hidden h-[600px] ">
+        <div id="slide1" class="carousel-item text-center relative w-full">
+          <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5  text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn bg-[#F85559]">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="hero min-h-screen" style="background-image: url(./images/banner2.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn bg-[#F85559]">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <div class="hero min-h-screen" style="background-image: url(./images/banner3.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn bg-[#F85559]">Shop Now </button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <div class="hero min-h-screen" style="background-image: url(./images/banner4.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn bg-[#F85559]">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <!-- bonus fruit bar -->
+      <div class="max-w-screen-lg justify-center items-center mx-auto absolute -top-9 drop-shadow-lg  grid grid-cols-5 h-52 py-10 px-3 bg-white">
+        <img src="./images/fruit1.png" alt="">
+        <img src="./images/fruit2.png" alt="">
+        <img src="./images/fruit3.png" alt="">
+        <img src="./images/fruit4.png" alt="">
+        <img src="./images/fruit5.png" alt="">
+      </div>
+    </div>
 
-    </footer>
+  </header>
+  <main class="max-w-screen-xl mx-auto font-Lato">
+    <div class="mt-32 flex gap-25 ">
+      <div class=" flex-1">
+        <h2 class="text-4xl font-extrabold">Deal of the day</h2>
+        <p class="text-stone-500 font-normal mt-5">Contrary to popular belief, is not simply random text. It has roots
+          in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+
+      </div>
+      <div class="flex-1 ">
+        <div class="grid grid-flow-col gap-5 font-medium text-center auto-cols-max">
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:29;"></span> :
+            </span>
+            days
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:15;"></span> :
+            </span>
+            hours
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:25;"></span> :
+            </span>
+            min
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:08;"></span>
+            </span>
+            sec
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+
+    <!-- card section -->
+    <div class="max-w-screen-xl mx-auto mt-12">
+      <div class="">
+        <div class="card w-96 bg-base-100 border shadow-xl">
+          <div class="border-b">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <p class="text-lg font-bold text-center mb-5 mt-12">12.90$ - 18.85$</p>
+          </div>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-sm ">Apples</h2>
+            <div class="text-[#F85559]">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+
+            </div>
+            <a href=""> Details</a>
+            <!-- <div class="card-actions">
+              <button class="btn btn-primary">Buy Now</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="max-w-screen-xl  mt-12 flex justify-center items-center">
+      <button class="btn bg-[#F85559] text-white text-center ">Shop All</button>
+
+    </div>
+
+    <!--  -->
+
+
+
+  </main>
+  <footer>
+
+  </footer>
 
 </body>
 
