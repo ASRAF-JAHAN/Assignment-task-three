@@ -10,7 +10,9 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- font awesome icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- lato and poppins google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +45,7 @@
         <div class="navbar-center text-center">
           <p class="flex gap-2 items-center text-2xl"><img src="./images/logo.png" alt="">Fruit Burst</p>
         </div>
-        <div class="navbar-end">
+        <div class="navbar-end invisible lg:visible">
           <input class=" relative rounded-full text-sm py-3 pl-2" type="text" name="" id="" placeholder="Search here">
           <svg xmlns="http://www.w3.org/2000/svg" class="text-black absolute  h-5 w-5" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
@@ -56,16 +58,16 @@
 
     </nav>
     <!-- banner section -->
-    <div class="max-w-screen-xl relative  font-Lato mx-auto mt-12">
-      <div class="carousel  overflow-hidden h-[600px] ">
-        <div id="slide1" class="carousel-item text-center relative w-full">
-          <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+    <section class="max-w-screen-xl  mx-auto mt-10">
+      <div class="carousel w-full  ">
+        <!-- slider 1 -->
+        <div id="slide1" class="carousel-item relative  w-full">
+          <div class="hero min-h-screen h-[500px]" style="background-image: url(./images/banner1.png);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
-              <div class="max-w-md">
-                <h1 class="mb-5  text-5xl font-bold">Exotic tastes at your doorstep</h1>
-                <p class="mb-5">We supply highly quality organic products</p>
-                <button class="btn bg-[#F85559]">Shop Now</button>
+              <div class="max-w-md  text-center">
+                <h1 class="mb-5 text-5xl  font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5 ">We supply highly quality organic products</p>
               </div>
             </div>
           </div>
@@ -74,14 +76,17 @@
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
         </div>
+        <!-- slider 2 -->
         <div id="slide2" class="carousel-item relative w-full">
-          <div class="hero min-h-screen" style="background-image: url(./images/banner2.png);">
+          <div class="hero min-h-screen h-[500px]" style="background-image: url(./images/banner2.png);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
                 <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
-                <p class="mb-5">We supply highly quality organic products</p>
-                <button class="btn bg-[#F85559]">Shop Now</button>
+                <p class="mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                  piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                  Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                  consectetur.</p>
               </div>
             </div>
           </div>
@@ -90,14 +95,14 @@
             <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
         </div>
+        <!-- slider 3 -->
         <div id="slide3" class="carousel-item relative w-full">
-          <div class="hero min-h-screen" style="background-image: url(./images/banner3.png);">
+          <div class="hero min-h-screen h-[500px]" style="background-image: url(./images/banner3.png);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
                 <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
                 <p class="mb-5">We supply highly quality organic products</p>
-                <button class="btn bg-[#F85559]">Shop Now </button>
               </div>
             </div>
           </div>
@@ -106,32 +111,25 @@
             <a href="#slide4" class="btn btn-circle">❯</a>
           </div>
         </div>
+        <!-- slider 4 -->
         <div id="slide4" class="carousel-item relative w-full">
-          <div class="hero min-h-screen" style="background-image: url(./images/banner4.png);">
+          <div class="hero min-h-screen h-[500px]" style="background-image: url(./images/banner4.png);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md">
                 <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
-                <p class="mb-5">We supply highly quality organic products</p>
-                <button class="btn bg-[#F85559]">Shop Now</button>
+                <p class="mb-5"></p>
               </div>
             </div>
           </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <div class="absolute flex justify-between 
+        transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide3" class="btn btn-circle">❮</a>
             <a href="#slide1" class="btn btn-circle">❯</a>
           </div>
         </div>
       </div>
-      <!-- bonus fruit bar -->
-      <div class="max-w-screen-lg justify-center items-center mx-auto absolute -top-9 drop-shadow-lg  grid grid-cols-5 h-52 py-10 px-3 bg-white">
-        <img src="./images/fruit1.png" alt="">
-        <img src="./images/fruit2.png" alt="">
-        <img src="./images/fruit3.png" alt="">
-        <img src="./images/fruit4.png" alt="">
-        <img src="./images/fruit5.png" alt="">
-      </div>
-    </div>
+    </section>
 
   </header>
   <main class="max-w-screen-xl mx-auto font-Lato">
@@ -215,12 +213,89 @@
 
     </div>
 
-    <!--  -->
+    <!--hero four man section  -->
+    <div class="hero min-h-[700px]  mt-20"
+      style="background-image: url(./images/banner1.png);">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <!-- new div -->
+        <div class=" text-center">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+          <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="flex gap-5">
+          <!-- div 1 -->
+          <div class="">
+            <img src="./images/member1.png" alt="">
+            <h3>Awlad Hossain</h3>
+            <p>Fruits Expert</p>
+            <!-- icon -->
+            <div class="flex gap-3 justify-center items-center text-[#F85559]">
+              <i  class="fa-brands fa-facebook "></i>
+              <i  class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <!-- div 2 -->
+          <div class="">
+            <img src="./images/member2.png" alt="">
+            <h3>Safia Chowdhury</h3>
+            <p>Fruits Expert</p>
+            <!-- icon -->
+            <div class="flex gap-3 justify-center items-center text-[#F85559]">
+              <i  class="fa-brands fa-facebook "></i>
+              <i  class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <!-- div 3 -->
+          <div class="">
+            <img src="./images/member3.png" alt="">
+            <h3>Rokib Hossain</h3>
+            <p>Fruits Expert</p>
+            <!-- icon -->
+            <div class="flex gap-3 justify-center items-center text-[#F85559]">
+              <i  class="fa-brands fa-facebook "></i>
+              <i  class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <!-- div 4 -->
+          <div class="">
+            <img src="./images/member4.png" alt="">
+            <h3>Chaity</h3>
+            <p>Fruits Expert</p>
+            <!-- icon -->
+            <div class="flex gap-3 justify-center items-center text-[#F85559]">
+              <i  class="fa-brands fa-facebook "></i>
+              <i  class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+        
+      </div>
+      
+    </div>
+
+    <!-- why choose us section -->
 
 
 
   </main>
   <footer>
+    <!-- fruit bar -->
+    <!-- <div class="max-w-screen-lg flex gap-4 justify-center items-center mx-auto absolute top-20 right-15 drop-shadow-lg   h-52 py-10 px-3 bg-white">
+      <img src="./images/fruit1.png" alt="">
+      <img src="./images/fruit2.png" alt="">
+      <img src="./images/fruit3.png" alt="">
+      <img src="./images/fruit4.png" alt="">
+      <img src="./images/fruit5.png" alt="">
+    </div> -->
+
 
   </footer>
 
